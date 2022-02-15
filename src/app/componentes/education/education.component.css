@@ -1,0 +1,10 @@
+.btn-certificado {
+    background-color: #97c93e;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-certificado:hover {
+    background-color: #82ad36;
+}
