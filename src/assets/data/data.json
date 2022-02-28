@@ -1,27 +1,35 @@
 {
-	"nombre": "Rodrigo Fabián Sosa",
-	"img_perfil": "",
+	"nombre": "Rodrigo Sosa",
+	"img_perfil": "https://i.ibb.co/jWNv9PQ/perfil-2.jpg",
+	"img_logo":"https://i.ibb.co/ZHhhW5X/intelligence.png",
+	"link_CV":"https://www.dropbox.com/s/1c9v53ofypayefh/CurriculumProg_Dic2021_SosaRodrigo.pdf?dl=0",
+	"email":"mailto:sosarodrigox@gmail.com",
+	"link_GitHub":"https://github.com/sosarodrigox",
+	"link_LinkedIn":"https://www.linkedin.com/in/sosarodrigo/",
 	"posicion": "Web Full Stack Developer Jr",
 	"slidescarrusel": [
 		{
 			"titulo": "Titulo 1er Slide",
 			"descripcion": "Descripcion 1er slide",
-			"img_carrusel": ""
+			"img_carrusel": "https://i.ibb.co/Vx2H2vL/1.jpg"
 		},
 		{
 			"titulo": "Titulo 2do Slide",
 			"descripcion": "Descripcion 2do slide",
-			"img_carrusel": ""
+			"img_carrusel": "https://i.ibb.co/MhShtTB/2.jpg"
 		},
 		{
 			"titulo": "Titulo 3er Slide",
 			"descripcion": "Descripcion 3er slide",
-			"img_carrusel": ""
+			"img_carrusel": "https://i.ibb.co/BwG8B50/3.jpg"
 		}
 	],
 	"resumen": {
-		"aboutme": "Acerca de mi...",
-		"meinteresa": "Me interesa...",
+		"aboutMe_Titulo": "Inicio en negrita.",
+		"aboutMe": "Acerca de mi...",
+		"meInteresa_titulo": "Inicio en negrita.",
+		"meInteresa": "Me interesa.",
+		"hobbies_Titulo": "Inicio en negrita.",
 		"hobbies": "Mis hobbies..."
 	},
 	"experiencia": [
@@ -71,7 +79,7 @@
 			"imgLogo": ""
 		}
 	],
-    "edu_cursos": [
+	"edu_cursos": [
 		{
 			"institucion": "META",
 			"nom_curso": "Realidad Virtual",
@@ -88,7 +96,7 @@
 			"fechaInicio": "2022",
 			"imgLogo": ""
 		},
-        {
+		{
 			"institucion": "META",
 			"nom_curso": "Realidad Virtual",
 			"descripcion": "Descripcion del curso",
@@ -97,38 +105,61 @@
 			"imgLogo": ""
 		}
 	],
-    "skill_hard":[
-        {
-            "skill":"habilidad dura 1",
-            "descripcion":"Descripcion habilidad dura 1",
-            "porcentaje":"50"
-        },
-        {
-            "skill":"habilidad dura 2",
-            "descripcion":"Descripcion habilidad dura 2",
-            "porcentaje":"25"
-        },
-        {
-            "skill":"habilidad dura 3",
-            "descripcion":"Descripcion habilidad dura 3",
-            "porcentaje":"75"
-        }
-    ],
-    "skill_soft":[
-        {
-            "skill":"habilidad blanda 1",
-            "descripcion":"Descripcion habilidad blanda 1",
-            "porcentaje":"50"
-        },
-        {
-            "skill":"habilidad blanda 2",
-            "descripcion":"Descripcion habilidad blanda 2",
-            "porcentaje":"25"
-        },
-        {
-            "skill":"habilidad blanda 3",
-            "descripcion":"Descripcion habilidad blanda 3",
-            "porcentaje":"75"
-        }
-    ]
+	"skill_hard": [
+		{
+			"skill": "habilidad dura 1",
+			"descripcion": "Descripcion habilidad dura 1",
+			"porcentaje": "50"
+		},
+		{
+			"skill": "habilidad dura 2",
+			"descripcion": "Descripcion habilidad dura 2",
+			"porcentaje": "25"
+		},
+		{
+			"skill": "habilidad dura 3",
+			"descripcion": "Descripcion habilidad dura 3",
+			"porcentaje": "75"
+		}
+	],
+	"skill_soft": [
+		{
+			"skill": "habilidad blanda 1",
+			"descripcion": "Descripcion habilidad blanda 1",
+			"porcentaje": "50"
+		},
+		{
+			"skill": "habilidad blanda 2",
+			"descripcion": "Descripcion habilidad blanda 2",
+			"porcentaje": "25"
+		},
+		{
+			"skill": "habilidad blanda 3",
+			"descripcion": "Descripcion habilidad blanda 3",
+			"porcentaje": "75"
+		}
+	],
+	"proyectos": [
+		{
+			"tipo": "Web Full Stack",
+			"nombre": "Portfolio Web Dinámico",
+			"descripcion": "Proyecto final para Argentina Programa Etapa 2 - #YoProgramo",
+			"tecnologias": "HTML | CSS | Bootstrap | JavaScript | SQL | Java",
+			"linkGitHub": "https://github.com/sosarodrigox/portfolioweb_dinamico"
+		},
+		{
+			"tipo": "Web Full Stack",
+			"nombre": "Portfolio Web Dinámico",
+			"descripcion": "Proyecto final para Argentina Programa Etapa 2 - #YoProgramo",
+			"tecnologias": "HTML | CSS | Bootstrap | JavaScript | SQL | Java",
+			"linkGitHub": "https://github.com/sosarodrigox/portfolioweb_dinamico"
+		},
+		{
+			"tipo": "Web Full Stack",
+			"nombre": "Portfolio Web Dinámico",
+			"descripcion": "Proyecto final para Argentina Programa Etapa 2 - #YoProgramo",
+			"tecnologias": "HTML | CSS | Bootstrap | JavaScript | SQL | Java",
+			"linkGitHub": "https://github.com/sosarodrigox/portfolioweb_dinamico"
+		}
+	]
 }
