@@ -1,58 +1,38 @@
-  <!-- Experiencia -->
-  <section id="experiencia" class="mt-2 mb-2">
-    <div class="container">
-      <div class="row justify-content-md-center">
-        <div class="col text-center">
-          <small>Experiencia</small>
-          <h3>Profesional</h3>
-        </div>
-        <div class="row mt-2">
-          <div class="col">
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./assets/images/GobER_Logo.jpg" class="img-fluid rounded-start"
-                    alt="Logo Gobierno de Entre Ríos">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">MIN. DE DESARROLLO SOCIAL E.R. - Equipo Técnico LAITEC</h5>
-                    <p class="card-text"><small class="text-muted">2014 - 2021</small></p>
-                    <p class="card-text">Eq. Técnico Línea de Acción Incorporación de Tecnología.
-                      Asistencia y acompañamiento a emprendedores con el
-                      objetivo de fortalecer actividades productivas mediante la
-                      transferencia de máquinas y herramientas. Tareas de
-                      asesoramiento, coordinación, logísticas y administrativas.</p>
+<!-- Experiencia -->
+<section id="experiencia" class="mt-2 mb-2">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col text-center">
+        <small>Experiencia</small>
+        <h3>Profesional</h3>
+      </div>
+      <div id="lista">
+        <ul class="item-list lista">
+          <li *ngFor="let experiencia of experienciaList">
+            <div class="row mt-2">
+              <div class="col">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img [src]="experiencia.imgLogo" class="img-fluid rounded-start"
+                        [alt]="experiencia.organizacion">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">{{experiencia.organizacion}}</h5>
+                        <p class="card-text">{{experiencia.puesto}}<small class="text-muted"> ({{experiencia.fechaDesde}}</small> -
+                          <small class="text-muted">{{experiencia.fechaHasta}})</small></p>
+                        <p class="card-text">{{experiencia.descTareas}}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row mt-2">
-          <div class="col">
-            <div class="card mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src="./assets/images/GobER_Logo.jpg" class="img-fluid rounded-start"
-                    alt="Logo Gobierno de Entre Ríos">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">MIN. DE DESARROLLO SOCIAL E.R. - Equipo Técnico LAITEC</h5>
-                    <p class="card-text"><small class="text-muted">2014 - 2021</small></p>
-                    <p class="card-text">Eq. Técnico Línea de Acción Incorporación de Tecnología.
-                      Asistencia y acompañamiento a emprendedores con el
-                      objetivo de fortalecer actividades productivas mediante la
-                      transferencia de máquinas y herramientas. Tareas de
-                      asesoramiento, coordinación, logísticas y administrativas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  <!-- /Experiencia -->
+  </div>
+</section>
+<!-- /Experiencia -->
