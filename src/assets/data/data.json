@@ -58,7 +58,7 @@
 			"linkAvance": "#",
 			"fechaInicio": "2022",
 			"fechaFin": "En curso",
-			"imgLogo": ""
+			"imgLogo": "https://i.ibb.co/GdPLF03/ISPC-logo.png"
 		},
 		{
 			"universidad": "UNIVERSIDAD TECNOLOGICA NACIONAL",
@@ -67,7 +67,25 @@
 			"linkAvance": "#",
 			"fechaInicio": "2020",
 			"fechaFin": "En curso - 95% Completo",
-			"imgLogo": ""
+			"imgLogo": "https://i.ibb.co/VwGCmMY/UTN-logo.jpg"
+		},
+		{
+			"universidad": "UNIVERSIDAD TECNOLOGICA NACIONAL",
+			"carrera": "Tecnicatura Universitaria en Programación",
+			"linkMasInfo": "https://www.frp.utn.edu.ar/info2/?page_id=6235",
+			"linkAvance": "#",
+			"fechaInicio": "2020",
+			"fechaFin": "En curso - 95% Completo",
+			"imgLogo": "https://i.ibb.co/VwGCmMY/UTN-logo.jpg"
+		},
+		{
+			"universidad": "UNIVERSIDAD TECNOLOGICA NACIONAL",
+			"carrera": "Tecnicatura Universitaria en Programación",
+			"linkMasInfo": "https://www.frp.utn.edu.ar/info2/?page_id=6235",
+			"linkAvance": "#",
+			"fechaInicio": "2020",
+			"fechaFin": "En curso - 95% Completo",
+			"imgLogo": "https://i.ibb.co/VwGCmMY/UTN-logo.jpg"
 		},
 		{
 			"universidad": "UNIVERSIDAD NACIONAL DE ENTRE RIOS",
@@ -76,7 +94,7 @@
 			"linkAvance": "#",
 			"fechaInicio": "2018",
 			"fechaFin": "2020",
-			"imgLogo": ""
+			"imgLogo": "https://i.ibb.co/PGS29XN/UNER-logo.png"
 		}
 	],
 	"edu_cursos": [

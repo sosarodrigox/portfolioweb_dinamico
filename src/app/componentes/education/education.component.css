@@ -8,3 +8,7 @@
 .btn-certificado:hover {
     background-color: #82ad36;
 }
+
+#lista ul{
+    list-style:none;
+    }
