@@ -55,7 +55,6 @@
 			"universidad": "INSTITUTO SUPERIOR POLITÉCNICO DE CORDOBA",
 			"carrera": "Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial",
 			"linkMasInfo": "https://ispc.prod.tucampus.org/tecnicatura-datos/",
-			"linkAvance": "#",
 			"fechaInicio": "2022",
 			"fechaFin": "En curso",
 			"imgLogo": "https://i.ibb.co/GdPLF03/ISPC-logo.png"
@@ -64,25 +63,6 @@
 			"universidad": "UNIVERSIDAD TECNOLOGICA NACIONAL",
 			"carrera": "Tecnicatura Universitaria en Programación",
 			"linkMasInfo": "https://www.frp.utn.edu.ar/info2/?page_id=6235",
-			"linkAvance": "#",
-			"fechaInicio": "2020",
-			"fechaFin": "En curso - 95% Completo",
-			"imgLogo": "https://i.ibb.co/VwGCmMY/UTN-logo.jpg"
-		},
-		{
-			"universidad": "UNIVERSIDAD TECNOLOGICA NACIONAL",
-			"carrera": "Tecnicatura Universitaria en Programación",
-			"linkMasInfo": "https://www.frp.utn.edu.ar/info2/?page_id=6235",
-			"linkAvance": "#",
-			"fechaInicio": "2020",
-			"fechaFin": "En curso - 95% Completo",
-			"imgLogo": "https://i.ibb.co/VwGCmMY/UTN-logo.jpg"
-		},
-		{
-			"universidad": "UNIVERSIDAD TECNOLOGICA NACIONAL",
-			"carrera": "Tecnicatura Universitaria en Programación",
-			"linkMasInfo": "https://www.frp.utn.edu.ar/info2/?page_id=6235",
-			"linkAvance": "#",
 			"fechaInicio": "2020",
 			"fechaFin": "En curso - 95% Completo",
 			"imgLogo": "https://i.ibb.co/VwGCmMY/UTN-logo.jpg"
@@ -91,7 +71,6 @@
 			"universidad": "UNIVERSIDAD NACIONAL DE ENTRE RIOS",
 			"carrera": "Tecnicatura Universitaria en Gestión y Administración Pública",
 			"linkMasInfo": "http://www.fceco.uner.edu.ar/?page_id=198",
-			"linkAvance": "#",
 			"fechaInicio": "2018",
 			"fechaFin": "2020",
 			"imgLogo": "https://i.ibb.co/PGS29XN/UNER-logo.png"
