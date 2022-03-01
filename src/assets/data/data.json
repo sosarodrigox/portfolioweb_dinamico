@@ -83,7 +83,7 @@
 			"descripcion": "Descripcion del curso",
 			"duracion": "4 modulos...",
 			"fechaInicio": "2022",
-			"imgLogo": ""
+			"imgLogo": "https://i.ibb.co/Xy1Tdqs/curso.png"
 		},
 		{
 			"institucion": "META",
@@ -91,7 +91,7 @@
 			"descripcion": "Descripcion del curso",
 			"duracion": "4 modulos...",
 			"fechaInicio": "2022",
-			"imgLogo": ""
+			"imgLogo": "https://i.ibb.co/Xy1Tdqs/curso.png"
 		},
 		{
 			"institucion": "META",
@@ -99,7 +99,23 @@
 			"descripcion": "Descripcion del curso",
 			"duracion": "4 modulos...",
 			"fechaInicio": "2022",
-			"imgLogo": ""
+			"imgLogo": "https://i.ibb.co/Xy1Tdqs/curso.png"
+		},
+		{
+			"institucion": "META",
+			"nom_curso": "Realidad Virtual",
+			"descripcion": "Descripcion del curso",
+			"duracion": "4 modulos...",
+			"fechaInicio": "2022",
+			"imgLogo": "https://i.ibb.co/Xy1Tdqs/curso.png"
+		},
+		{
+			"institucion": "META",
+			"nom_curso": "Realidad Virtual",
+			"descripcion": "Descripcion del curso",
+			"duracion": "4 modulos...",
+			"fechaInicio": "2022",
+			"imgLogo": "https://i.ibb.co/Xy1Tdqs/curso.png"
 		}
 	],
 	"skill_hard": [

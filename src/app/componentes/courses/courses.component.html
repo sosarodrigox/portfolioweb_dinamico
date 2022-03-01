@@ -1,0 +1,27 @@
+<!-- Cursos-->
+<section id="educacion" class="mt-2 mb-2">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col text-center">
+                <small>Educación</small>
+                <h3>Cursos:</h3>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-md-center">
+            <div class="col" *ngFor="let edu_cursos of coursesList">
+                <div class="card h-100">
+                    <img [src]="edu_cursos.imgLogo" class="card-img-top" [alt]="edu_cursos.nom_curso">
+                    <div class="card-body">
+                        <h3 class="card-title">{{edu_cursos.institucion}}</h3>
+                        <h5 class="card-text">{{edu_cursos.nom_curso}}</h5>
+                        <p class="card-text">{{edu_cursos.descripcion}}</p>
+                        <p><small class="text-muted"> {{edu_cursos.duracion}}</small> -
+                            <small class="text-muted">({{edu_cursos.fechaInicio}})</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Cursos -->
