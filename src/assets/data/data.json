@@ -139,17 +139,17 @@
 		{
 			"skill": "habilidad blanda 1",
 			"descripcion": "Descripcion habilidad blanda 1",
-			"porcentaje": "50"
+			"porcentaje": "55"
 		},
 		{
 			"skill": "habilidad blanda 2",
 			"descripcion": "Descripcion habilidad blanda 2",
-			"porcentaje": "25"
+			"porcentaje": "95"
 		},
 		{
 			"skill": "habilidad blanda 3",
 			"descripcion": "Descripcion habilidad blanda 3",
-			"porcentaje": "75"
+			"porcentaje": "5"
 		}
 	],
 	"proyectos": [
