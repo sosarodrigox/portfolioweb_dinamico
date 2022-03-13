@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 #footer{
-    background: green;
+    background: rgb(0, 0, 0);
 }
 
 #body {
-background: gray;
+background: rgb(26, 26, 26);
 }

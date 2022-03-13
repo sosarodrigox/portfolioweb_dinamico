@@ -16,5 +16,4 @@ export class CoursesComponent implements OnInit {
       this.coursesList = data.edu_cursos;
     })
   }
-
 }

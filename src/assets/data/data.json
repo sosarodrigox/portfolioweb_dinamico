@@ -1,5 +1,6 @@
 {
 	"nombre": "Rodrigo Sosa",
+	"usuario":"sosarodrigo",
 	"img_perfil": "https://i.ibb.co/jWNv9PQ/perfil-2.jpg",
 	"img_logo":"https://i.ibb.co/ZHhhW5X/intelligence.png",
 	"link_CV":"https://www.dropbox.com/s/1c9v53ofypayefh/CurriculumProg_Dic2021_SosaRodrigo.pdf?dl=0",
@@ -25,12 +26,12 @@
 		}
 	],
 	"resumen": {
-		"aboutMe_Titulo": "Inicio en negrita.",
-		"aboutMe": "Acerca de mi...",
-		"meInteresa_titulo": "Inicio en negrita.",
-		"meInteresa": "Me interesa.",
-		"hobbies_Titulo": "Inicio en negrita.",
-		"hobbies": "Mis hobbies..."
+		"aboutMe_Titulo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet eros purus. Vivamus at purus ante. Maecenas egestas dictum sodales. Vestibulum sit amet ornare elit. Praesent sagittis velit sit amet est congue, et tincidunt urna venenatis. Maecenas nibh quam, dictum eu ultricies quis, vulputate sit amet urna. Praesent sodales dapibus sagittis. Nam in dapibus ligula.",
+		"aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet eros purus. Vivamus at purus ante. Maecenas egestas dictum sodales. Vestibulum sit amet ornare elit. Praesent sagittis velit sit amet est congue, et tincidunt urna venenatis. Maecenas nibh quam, dictum eu ultricies quis, vulputate sit amet urna. Praesent sodales dapibus sagittis. Nam in dapibus ligula. Cras eget bibendum dolor.",
+		"meInteresa_titulo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet eros purus. Vivamus at purus ante. Maecenas egestas dictum sodales. Vestibulum sit amet ornare elit. Praesent sagittis velit sit amet est congue, et tincidunt urna venenatis. Maecenas nibh quam, dictum eu ultricies quis, vulputate sit amet urna. Praesent sodales dapibus sagittis. Nam in dapibus ligula.",
+		"meInteresa": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet eros purus. Vivamus at purus ante. Maecenas egestas dictum sodales. Vestibulum sit amet ornare elit. Praesent sagittis velit sit amet est congue, et tincidunt urna venenatis. Maecenas nibh quam, dictum eu ultricies quis, vulputate sit amet urna. Praesent sodales dapibus sagittis. Nam in dapibus ligula.",
+		"hobbies_Titulo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet eros purus. Vivamus at purus ante. Maecenas egestas dictum sodales. Vestibulum sit amet ornare elit. Praesent sagittis velit sit amet est congue, et tincidunt urna venenatis. Maecenas nibh quam, dictum eu ultricies quis, vulputate sit amet urna. Praesent sodales dapibus sagittis. Nam in dapibus ligula.",
+		"hobbies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet eros purus. Vivamus at purus ante. Maecenas egestas dictum sodales. Vestibulum sit amet ornare elit. Praesent sagittis velit sit amet est congue, et tincidunt urna venenatis. Maecenas nibh quam, dictum eu ultricies quis, vulputate sit amet urna. Praesent sodales dapibus sagittis. Nam in dapibus ligula."
 	},
 	"experiencia": [
 		{
@@ -154,11 +155,11 @@
 	],
 	"proyectos": [
 		{
-			"tipo": "Web Full Stack",
-			"nombre": "Portfolio Web Dinámico",
-			"descripcion": "Proyecto final para Argentina Programa Etapa 2 - #YoProgramo",
-			"tecnologias": "HTML | CSS | Bootstrap | JavaScript | SQL | Java",
-			"linkGitHub": "https://github.com/sosarodrigox/portfolioweb_dinamico"
+			"tipo": "Tipo Proyecto 1",
+			"nombre": "Nombre Proyecto 1",
+			"descripcion": "Descripción Proyecto 1",
+			"tecnologias": "HTML | CSS |",
+			"linkGitHub": "https://Proyecto 1.com"
 		},
 		{
 			"tipo": "Web Full Stack",

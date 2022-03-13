@@ -2,9 +2,16 @@
 <section id="skillh" class="mt-2 mb-2">
   <div class="container">
     <div class="row justify-content-md-center">
-      <div class="col text-center">
-        <small>Skills</small>
-        <h3>Hard Skills </h3>
+      <div class="row align-items-center">
+        <div class="col-4">
+        </div>
+        <div class="col-4 text-center titulo">
+          <small>Skills</small>
+          <h3>Hard Skills</h3>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-light">Agregar Skill<i class="fa-solid fa-circle-plus fa-lg ms-2"></i></button>
+        </div>
       </div>
       <div class="card mb-2" *ngFor="let skill_hard of skillList">
         <div class="card-body">

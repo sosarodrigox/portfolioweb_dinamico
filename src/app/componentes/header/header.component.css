@@ -40,3 +40,24 @@
 .btn-certificado:hover {
     background-color: #82ad36;
 }
+
+.fa-botonheader{
+    color:#97c93e;
+    font-size: 35px;
+}
+
+.btn-login{
+    color: #fff;
+    font-weight: bold;
+    border-color: #97c93e;
+}
+
+.texto-user{
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-ed-header{
+    color:#6b6a6a;
+    font-size: 25px;
+}
