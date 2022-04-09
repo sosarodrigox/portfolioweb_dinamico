@@ -53,7 +53,10 @@
           <div class="col-md-6 text-center text-md-start">
             <img [src]="miPortofolio.img_perfil" class="rounded-circle">
             <div class="mt-2">
-              <button type="button" class="btn btn-dark">Editar Header <i class="fa-solid fa-pen-to-square"></i> </button>
+              <app-boton-header 
+                text="Editar Header"
+                (btnClick)="editarHeader()"
+              ></app-boton-header>
             </div>
              
           </div>

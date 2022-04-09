@@ -14,6 +14,7 @@ import { PortfolioService } from './servicios/portfolio.service';
 import {HttpClientModule} from '@angular/common/http';
 import { CoursesComponent } from './componentes/courses/courses.component';
 import { SkillhComponent } from './componentes/skillh/skillh.component';
+import { BotonHeaderComponent } from './componentes/boton-header/boton-header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SkillhComponent } from './componentes/skillh/skillh.component';
     ProjectsComponent,
     FooterComponent,
     CoursesComponent,
-    SkillhComponent
+    SkillhComponent,
+    BotonHeaderComponent
   ],
   imports: [
     BrowserModule,

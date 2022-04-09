@@ -18,4 +18,8 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  editarHeader(){
+    console.log("Función editarHeader!!!");
+  }
+
 }
