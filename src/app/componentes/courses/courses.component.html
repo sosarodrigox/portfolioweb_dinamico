@@ -16,7 +16,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-md-center">
             <div class="col" *ngFor="let edu_cursos of coursesList">
-                <div class="card h-100">
+                <div class="card h-80">
                     <img [src]="edu_cursos.imgLogo" class="card-img-top" [alt]="edu_cursos.nom_curso">
                     <div class="card-body">
                         <h3 class="card-title">{{edu_cursos.institucion}}</h3>
@@ -26,6 +26,10 @@
                             <small class="text-muted">({{edu_cursos.fechaInicio}})</small>
                         </p>
                     </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-outline-dark mb-2"><i class="fa-solid fa-pen-to-square"></i> </button>
+                        <button type="button" class="btn btn-outline-dark mb-2"><i class="fa-solid fa-trash-can"></i> </button>
+                      </div>
                 </div>
             </div>
         </div>
