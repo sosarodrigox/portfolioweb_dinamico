@@ -28,7 +28,5 @@ export class persona{
                     this.correo = correo;
                     this.sobre_mi_bold = sobre_mi_bold;
                     this.url_foto = url_foto;
-
-
                 }
 }
