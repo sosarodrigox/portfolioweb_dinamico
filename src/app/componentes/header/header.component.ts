@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   }
   */
 
-  persona: persona = new persona("","","","","","","","","",); //Creamos el objeto persona para inicializarlo 
+  persona: persona = new persona("","","","","","","","","","","","","","","","","","","","",); //Creamos el objeto persona para inicializarlo 
   
   constructor(public persoService : PersonaService){}
 
