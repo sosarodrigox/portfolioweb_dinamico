@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
 
   persona: persona = new persona("","","","","","","","","","","","","","","","","","","","",); //Creamos el objeto persona para inicializarlo 
   
-  constructor(public persoService : PersonaService){}
+  constructor(public persoService : PersonaService){} //El constructor llama al servicio persona.service.
 
   ngOnInit(): void {
     this.persoService.getPersona().subscribe(data => {this.persona = data}) //Nuestra persona va a ser igual a lo que traiga data.
