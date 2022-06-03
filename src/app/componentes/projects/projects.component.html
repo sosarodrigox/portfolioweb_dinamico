@@ -13,7 +13,7 @@
             <button type="button" class="btn btn-outline-light">Agregar Proyecto<i class="fa-solid fa-circle-plus fa-lg ms-2"></i></button>
         </div>
       </div>
-        <div class="card mb-2" *ngFor="let proyectos of projectList">
+        <div class="card mb-2" *ngFor="let proyectos of proyecto">
           <div class="card-header">
             {{proyectos.tipo}}
           </div>
@@ -21,7 +21,7 @@
             <h5 class="card-title">{{proyectos.nombre}}</h5>
             <p class="card-text">{{proyectos.descripcion}}</p>
             <p class="card-text"><small class="text-muted">{{proyectos.tecnologias}}</small></p>
-            <a [href]="proyectos.linkGitHub" class="btn btn-primary  mb-2">Ver en
+            <a [href]="proyectos.github_link" class="btn btn-primary  mb-2">Ver en
               GitHub</a>
           </div>
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">

@@ -15,15 +15,15 @@
               </div>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-md-center">
-            <div class="col" *ngFor="let edu_cursos of coursesList">
+            <div class="col" *ngFor="let edu_cursos of eduCurso">
                 <div class="card h-80">
-                    <img [src]="edu_cursos.imgLogo" class="card-img-top" [alt]="edu_cursos.nom_curso">
+                    <img [src]="edu_cursos.img_logo" class="card-img-top" [alt]="edu_cursos.nom_curso">
                     <div class="card-body">
                         <h3 class="card-title">{{edu_cursos.institucion}}</h3>
                         <h5 class="card-text">{{edu_cursos.nom_curso}}</h5>
                         <p class="card-text">{{edu_cursos.descripcion}}</p>
                         <p><small class="text-muted"> {{edu_cursos.duracion}}</small> -
-                            <small class="text-muted">({{edu_cursos.fechaInicio}})</small>
+                            <small class="text-muted">({{edu_cursos.fecha_inicio}})</small>
                         </p>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">

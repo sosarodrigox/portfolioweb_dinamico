@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HardskillService } from 'src/app/servicios/hardskill.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
@@ -7,6 +8,15 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./skillh.component.css']
 })
 export class SkillhComponent implements OnInit {
+
+  skillHard: any;
+
+  constructor(private skillHardService:HardskillService){}
+
+  ngOnInit(): void {
+    this.skillHardService.getListaHardSkills().subscribe(data=>{this.skillHard=data})
+  }
+  /*
   skillList:any;
   constructor(private datosPortfolio:PortfolioService) { }
 
@@ -16,5 +26,5 @@ export class SkillhComponent implements OnInit {
       this.skillList=data.skill_hard;
     })
   }
-
+  */
 }

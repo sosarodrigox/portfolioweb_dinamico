@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { SoftskillService } from 'src/app/servicios/softskill.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,6 +8,16 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
+
+  skillSoft: any;
+
+  constructor(private skillSoftService:SoftskillService){}
+
+  ngOnInit(): void {
+    this.skillSoftService.getListaSoftSkills().subscribe(data=>{this.skillSoft=data});
+  }
+
+  /*
   skillList:any;
   constructor(private datosPortfolio:PortfolioService) { }
 
@@ -16,4 +27,5 @@ export class SkillsComponent implements OnInit {
       this.skillList=data.skill_soft;
     })
   }
+  */
 }

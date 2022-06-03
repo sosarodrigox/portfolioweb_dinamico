@@ -16,17 +16,17 @@
     </div>
     <div id="lista">
       <ul class="row">
-        <li class="col-md-4 mb-3" *ngFor="let edu_carreras of educacionList">
+        <li class="col-md-4 mb-3" *ngFor="let edu_carreras of eduCarrera">
           <div class="card text-center h-100">
-            <img [src]="edu_carreras.imgLogo" class="card-img-top" [alt]="edu_carreras.universidad">
+            <img src={{edu_carreras.img_logo}} class="card-img-top" [alt]="edu_carreras.universidad">
             <div class="card-body">
               <h5 class="card-title">{{edu_carreras.universidad}}</h5>
               <p class="card-text">{{edu_carreras.carrera}}</p>
               <p class="card-text mt-3 mb-3">
-                <a [href]="edu_carreras.linkMasInfo" type="button" class="btn btn-certificado">Mas información</a>
+                <a [href]="edu_carreras.link_info" type="button" class="btn btn-certificado">Mas información</a>
               </p>
-              <p><small class="text-muted"> ({{edu_carreras.fechaInicio}}</small> -
-                <small class="text-muted">{{edu_carreras.fechaFin}})</small>
+              <p><small class="text-muted"> ({{edu_carreras.fecha_inicio}}</small> -
+                <small class="text-muted">{{edu_carreras.fecha_fin}})</small>
               </p>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
