@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -15,6 +14,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { CoursesComponent } from './componentes/courses/courses.component';
 import { SkillhComponent } from './componentes/skillh/skillh.component';
 import { BotonHeaderComponent } from './componentes/boton-header/boton-header.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { BotonHeaderComponent } from './componentes/boton-header/boton-header.co
     FooterComponent,
     CoursesComponent,
     SkillhComponent,
-    BotonHeaderComponent
+    BotonHeaderComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
