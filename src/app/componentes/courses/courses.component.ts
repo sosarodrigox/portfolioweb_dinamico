@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CursoService } from 'src/app/servicios/curso.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
@@ -11,10 +12,14 @@ export class CoursesComponent implements OnInit {
   
   eduCurso: any;
 
-  constructor(private eduCursoService:CursoService){}
+  constructor(private eduCursoService:CursoService,private router:Router){}
 
   ngOnInit(): void {
     this.eduCursoService.getListaCursos().subscribe(data=>{this.eduCurso=data})
+  }
+
+  crearCurso(){
+    this.router.navigate(['/crear-curso'])
   }
   /*
   coursesList:any;

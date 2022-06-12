@@ -19,6 +19,7 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CrearExperienciaComponent } from './componentes/crear-experiencia/crear-experiencia.component';
 import { FormsModule } from '@angular/forms';
 import { CrearCarreraComponent } from './componentes/crear-carrera/crear-carrera.component';
+import { CrearCursoComponent } from './componentes/crear-curso/crear-curso.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CrearCarreraComponent } from './componentes/crear-carrera/crear-carrera
     HomeComponent,
     LoginComponent,
     CrearExperienciaComponent,
-    CrearCarreraComponent
+    CrearCarreraComponent,
+    CrearCursoComponent
   ],
   imports: [
     BrowserModule,
