@@ -1,0 +1,63 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Crear carrera</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Universidad: </label>
+            <input type="text"
+            class="form-control"
+            id="universidad"
+            [(ngModel)]="carrera.universidad"
+            name = "universidad"
+            >
+        </div>
+        <div class="form-group">
+            <label>Carrera: </label>
+            <input type="text"
+            class="form-control"
+            id="carrera"
+            [(ngModel)]="carrera.carrera"
+            name = "carrera"
+            >
+        </div>
+        <div class="form-group">
+            <label>Link +info: </label>
+            <input type="text"
+            class="form-control"
+            id="link_info"
+            [(ngModel)]="carrera.link_info"
+            name = "link_info"
+            >
+        </div>
+        <div class="form-group">
+            <label>Fecha de inicio: </label>
+            <input type="text"
+            class="form-control"
+            id="fecha_inicio"
+            [(ngModel)]="carrera.fecha_inicio"
+            name = "fecha_inicio"
+            >
+        </div>
+        <div class="form-group">
+            <label>Fecha de fin: </label>
+            <input type="text"
+            class="form-control"
+            id="fecha_fin"
+            [(ngModel)]="carrera.fecha_fin"
+            name = "fecha_fin"
+            >
+        </div>
+        <div class="form-group">
+            <label>Link a logo: </label>
+            <input type="text"
+            class="form-control"
+            id="img_logo"
+            [(ngModel)]="carrera.img_logo"
+            name = "img_logo"
+            >
+        </div>
+        <div>
+            <button class="btn btn-success mt-2">Crear carrera</button>
+        </div>
+
+    </form>
+</div>

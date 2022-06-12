@@ -15,4 +15,8 @@ export class CarreraService {
   public getListaCarreras():Observable<edu_carrera>{
     return this.http.get<edu_carrera>(this.URL+'ver/lista-carreras');
   }
+
+  public crearCarrera(carrera:edu_carrera):Observable<Object>{
+    return this.http.post(this.URL+'nueva/carrera',carrera);
+  }
 }
