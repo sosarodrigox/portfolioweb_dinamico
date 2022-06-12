@@ -1,0 +1,64 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Crear experiencia</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Organizacion: </label>
+            <input type="text"
+            class="form-control"
+            id="organizacion"
+            [(ngModel)]="experiencia.organizacion"
+            name = "organizacion"
+            >
+        </div>
+        <div class="form-group">
+            <label>Puesto: </label>
+            <input type="text"
+            class="form-control"
+            id="puesto"
+            [(ngModel)]="experiencia.puesto"
+            name = "puesto"
+            >
+        </div>
+        <div class="form-group">
+            <label>Fecha desde: </label>
+            <input type="text"
+            class="form-control"
+            id="fechaDesde"
+            [(ngModel)]="experiencia.fechaDesde"
+            name = "fechaDesde"
+            >
+        </div>
+        <div class="form-group">
+            <label>Fecha hasta: </label>
+            <input type="text"
+            class="form-control"
+            id="fechaHasta"
+            [(ngModel)]="experiencia.fechaHasta"
+            name = "fechaHasta"
+            >
+        </div>
+        <div class="form-group">
+            <label>Descripcion de tareas: </label>
+            <input type="text"
+            class="form-control"
+            id="descTareas"
+            [(ngModel)]="experiencia.descTareas"
+            name = "descTareas"
+            >
+        </div>
+        <div class="form-group">
+            <label>Link a imagen logo: </label>
+            <input type="text"
+            class="form-control"
+            id="imgLogo"
+            [(ngModel)]="experiencia.imgLogo"
+            name = "imgLogo"
+            >
+        </div>
+
+        <div>
+            <button class="btn btn-success mt-2">Crear experiencia</button>
+        </div>
+
+    </form>
+</div>

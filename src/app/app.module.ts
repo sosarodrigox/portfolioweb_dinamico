@@ -16,6 +16,8 @@ import { SkillhComponent } from './componentes/skillh/skillh.component';
 import { BotonHeaderComponent } from './componentes/boton-header/boton-header.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { CrearExperienciaComponent } from './componentes/crear-experiencia/crear-experiencia.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { LoginComponent } from './componentes/login/login.component';
     SkillhComponent,
     BotonHeaderComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    CrearExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
