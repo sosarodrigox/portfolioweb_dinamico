@@ -15,4 +15,8 @@ export class CursoService {
   public getListaCursos():Observable<edu_curso>{
     return this.http.get<edu_curso>(this.URL+'ver/lista-cursos');
   }
+
+  public crearCurso(curso:edu_curso):Observable<Object>{
+    return this.http.post(this.URL+'nuevo/curso',curso);
+  }
 }

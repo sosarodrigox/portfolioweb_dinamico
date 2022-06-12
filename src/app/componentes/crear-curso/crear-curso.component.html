@@ -1,0 +1,62 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Crear curso</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Institucion: </label>
+            <input type="text"
+            class="form-control"
+            id="institucion"
+            [(ngModel)]="curso.institucion"
+            name="institucion"
+            >
+        </div>
+        <div class="form-group">
+            <label>Nombre del curso: </label>
+            <input type="text"
+            class="form-control"
+            id="nom_curso"
+            [(ngModel)]="curso.nom_curso"
+            name="nom_curso"
+            >
+        </div>
+        <div class="form-group">
+            <label>Descripcion: </label>
+            <input type="text"
+            class="form-control"
+            id="descripcion"
+            [(ngModel)]="curso.descripcion"
+            name="descripcion"
+            >
+        </div>
+        <div class="form-group">
+            <label>Duracion: </label>
+            <input type="text"
+            class="form-control"
+            id="duracion"
+            [(ngModel)]="curso.duracion"
+            name="duracion"
+            >
+        </div>
+        <div class="form-group">
+            <label>Fecha de inicio: </label>
+            <input type="text"
+            class="form-control"
+            id="fecha_inicio"
+            [(ngModel)]="curso.fecha_inicio"
+            name="fecha_inicio"
+            >
+        </div>
+        <div class="form-group">
+            <label>Link a imagen de logo: </label>
+            <input type="text"
+            class="form-control"
+            id="img_Logo"
+            [(ngModel)]="curso.img_logo"
+            name="img_Logo"
+            >
+        </div>
+        <div>
+            <button class="btn btn-success mt-2">Crear curso</button>
+        </div>
+    </form>
+</div>
