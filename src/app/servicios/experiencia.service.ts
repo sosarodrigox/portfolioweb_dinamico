@@ -15,4 +15,8 @@ export class ExperienciaService {
   public getListaExp():Observable<experiencia>{
     return this.http.get<experiencia>(this.URL+'ver/lista-exp');
   }
+
+  public crearExperiencia(experiencia:experiencia):Observable<Object>{
+    return this.http.post(this.URL+'nueva/experiencia', experiencia);
+  }
 }
