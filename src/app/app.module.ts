@@ -18,6 +18,7 @@ import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CrearExperienciaComponent } from './componentes/crear-experiencia/crear-experiencia.component';
 import { FormsModule } from '@angular/forms';
+import { CrearCarreraComponent } from './componentes/crear-carrera/crear-carrera.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     BotonHeaderComponent,
     HomeComponent,
     LoginComponent,
-    CrearExperienciaComponent
+    CrearExperienciaComponent,
+    CrearCarreraComponent
   ],
   imports: [
     BrowserModule,

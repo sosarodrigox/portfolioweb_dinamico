@@ -11,6 +11,7 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 export class CrearExperienciaComponent implements OnInit {
 
   experiencia : experiencia = new experiencia("", "", "", "", "", "")
+  
   constructor(private expService: ExperienciaService, private router:Router) { }
 
   ngOnInit(): void {
