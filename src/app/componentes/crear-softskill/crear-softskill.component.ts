@@ -19,7 +19,7 @@ export class CrearSoftskillComponent implements OnInit {
 
   crearSoftSkill(){
     this.softSkillService.crearSoftSkill(this.skillSoft).subscribe(dato=>{
-      console.log(dato)
+      console.log(dato);
       this.volverPortfolio();
     });
   }

@@ -15,4 +15,8 @@ export class ProyectoService {
   public getListaProyectos():Observable<proyecto>{
     return this.http.get<proyecto>(this.URL+'ver/lista-proyecto');
   }
+
+  public crearProyecto(proyecto:proyecto):Observable<Object>{
+    return this.http.post(this.URL+'nuevo/proyecto',proyecto);
+  }
 }

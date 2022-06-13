@@ -1,0 +1,54 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Crear proyecto</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Tipo: </label>
+            <input type="text"
+            class="form-control"
+            id="tipo"
+            [(ngModel)]="proyecto.tipo"
+            name="tipo"
+            >
+        </div>
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input type="text"
+            class="form-control"
+            id="nombre"
+            [(ngModel)]="proyecto.nombre"
+            name="nombre"
+            >
+        </div>
+        <div class="form-group">
+            <label>Descripcion: </label>
+            <input type="text"
+            class="form-control"
+            id="descripcion"
+            [(ngModel)]="proyecto.descripcion"
+            name="descripcion"
+            >
+        </div>
+        <div class="form-group">
+            <label>Tecnologias: </label>
+            <input type="text"
+            class="form-control"
+            id="tecnologias"
+            [(ngModel)]="proyecto.tecnologias"
+            name="tecnologias"
+            >
+        </div>
+        <div class="form-group">
+            <label>Link al proyecto: </label>
+            <input type="text"
+            class="form-control"
+            id="github_link"
+            [(ngModel)]="proyecto.github_link"
+            name="github_link"
+            >
+        </div>
+        <div>
+            <button class="btn btn-success mt-2">Crear proyecto</button>
+        </div>
+    </form>
+</div>
+

@@ -4,6 +4,7 @@ import { CrearCarreraComponent } from './componentes/crear-carrera/crear-carrera
 import { CrearCursoComponent } from './componentes/crear-curso/crear-curso.component';
 import { CrearExperienciaComponent } from './componentes/crear-experiencia/crear-experiencia.component';
 import { CrearHardskillComponent } from './componentes/crear-hardskill/crear-hardskill.component';
+import { CrearProyectoComponent } from './componentes/crear-proyecto/crear-proyecto.component';
 import { CrearSoftskillComponent } from './componentes/crear-softskill/crear-softskill.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
@@ -16,9 +17,8 @@ const routes: Routes = [
   {path:'crear-carrera', component:CrearCarreraComponent},
   {path:'crear-curso', component:CrearCursoComponent},
   {path:'crear-hardskill', component:CrearHardskillComponent},
-  {path:'crear-softskill', component:CrearSoftskillComponent}
-
-
+  {path:'crear-softskill', component:CrearSoftskillComponent},
+  {path:'crear-proyecto', component:CrearProyectoComponent}
 ];
 
 @NgModule({
