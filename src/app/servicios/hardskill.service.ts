@@ -13,6 +13,10 @@ export class HardskillService {
   constructor(private http: HttpClient) { }
 
   public getListaHardSkills():Observable<skill_hard>{
-    return this.http.get<skill_hard>(this.URL+'Ver/lista-skill-h')
+    return this.http.get<skill_hard>(this.URL+'Ver/lista-skill-h');
+  }
+
+  public crearHardSkill(hardskill:skill_hard):Observable<Object>{
+    return this.http.post(this.URL+'nueva/h_skill',hardskill);
   }
 }

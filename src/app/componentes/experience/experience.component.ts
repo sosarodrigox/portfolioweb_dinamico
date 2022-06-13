@@ -11,8 +11,6 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  //experiencia: experiencia = new experiencia("","","","","","");
-
   experiencia:any;
   
   constructor(private expService:ExperienciaService, private router:Router) { }
