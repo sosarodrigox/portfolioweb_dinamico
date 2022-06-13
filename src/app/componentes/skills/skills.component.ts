@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { SoftskillService } from 'src/app/servicios/softskill.service';
 
@@ -11,10 +12,14 @@ export class SkillsComponent implements OnInit {
 
   skillSoft: any;
 
-  constructor(private skillSoftService:SoftskillService){}
+  constructor(private skillSoftService:SoftskillService,private router:Router){}
 
   ngOnInit(): void {
     this.skillSoftService.getListaSoftSkills().subscribe(data=>{this.skillSoft=data});
+  }
+
+  crearSoftSkill(){
+    this.router.navigate(['/crear-softskill'])
   }
 
   /*

@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { CrearCarreraComponent } from './componentes/crear-carrera/crear-carrera.component';
 import { CrearCursoComponent } from './componentes/crear-curso/crear-curso.component';
 import { CrearHardskillComponent } from './componentes/crear-hardskill/crear-hardskill.component';
+import { CrearSoftskillComponent } from './componentes/crear-softskill/crear-softskill.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CrearHardskillComponent } from './componentes/crear-hardskill/crear-har
     CrearExperienciaComponent,
     CrearCarreraComponent,
     CrearCursoComponent,
-    CrearHardskillComponent
+    CrearHardskillComponent,
+    CrearSoftskillComponent
   ],
   imports: [
     BrowserModule,

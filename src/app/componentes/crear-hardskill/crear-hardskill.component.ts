@@ -31,5 +31,4 @@ export class CrearHardskillComponent implements OnInit {
   onSubmit(){
     this.crearHardSkill();
   }
-
 }

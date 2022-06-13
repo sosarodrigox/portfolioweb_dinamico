@@ -15,4 +15,8 @@ export class SoftskillService {
   public getListaSoftSkills():Observable<skill_soft>{
     return this.http.get<skill_soft>(this.URL+'Ver/lista-skill-s');
   }
+
+  public crearSoftSkill(softskill:skill_soft):Observable<Object>{
+    return this.http.post(this.URL+'nueva/s_skill',softskill);
+  }
 }
