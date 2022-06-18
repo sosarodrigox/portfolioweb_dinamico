@@ -13,7 +13,6 @@ import { PortfolioService } from './servicios/portfolio.service';
 import {HttpClientModule} from '@angular/common/http';
 import { CoursesComponent } from './componentes/courses/courses.component';
 import { SkillhComponent } from './componentes/skillh/skillh.component';
-import { BotonHeaderComponent } from './componentes/boton-header/boton-header.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CrearExperienciaComponent } from './componentes/crear-experiencia/crear-experiencia.component';
@@ -37,7 +36,6 @@ import { ModificarExperienciaComponent } from './componentes/modificar-experienc
     FooterComponent,
     CoursesComponent,
     SkillhComponent,
-    BotonHeaderComponent,
     HomeComponent,
     LoginComponent,
     CrearExperienciaComponent,
