@@ -8,12 +8,14 @@ import { CrearProyectoComponent } from './componentes/crear-proyecto/crear-proye
 import { CrearSoftskillComponent } from './componentes/crear-softskill/crear-softskill.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { ModificarExperienciaComponent } from './componentes/modificar-experiencia/modificar-experiencia.component';
 
 const routes: Routes = [
   {path:'portfolio', component:HomeComponent},
   {path:'', component:HomeComponent},
   {path:'login', component:LoginComponent},
   {path:'crear-experiencia', component:CrearExperienciaComponent},
+  {path:'modificar-experiencia/:id_exp', component:ModificarExperienciaComponent},
   {path:'crear-carrera', component:CrearCarreraComponent},
   {path:'crear-curso', component:CrearCursoComponent},
   {path:'crear-hardskill', component:CrearHardskillComponent},

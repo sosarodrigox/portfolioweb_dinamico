@@ -11,29 +11,26 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  experiencia:any;
+  experienciaList:any;
   
   constructor(private expService:ExperienciaService, private router:Router) { }
 
   ngOnInit(): void {
-    this.expService.getListaExp().subscribe(data=>{this.experiencia=data})
+    this.expService.getListaExp().subscribe(data=>{this.experienciaList=data});
   }
 
   crearExp(){
-    this.router.navigate(['/crear-experiencia'])
+    this.router.navigate(['/crear-experiencia']);
   }
 
-  /*
-  experienciaList:any;
+  modificarExp(id:number){
+    this.router.navigate(['/modificar-experiencia',id]);
+  }
 
-  constructor(private datosPortfolio:PortfolioService) { }
-
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.experienciaList = data.experiencia;
+  borrarExp(id:number){
+    this.expService.borrarExperiencia(id).subscribe(dato =>{
+      console.log(dato);
+      this.ngOnInit();
     });
   }
-  */
-
 }

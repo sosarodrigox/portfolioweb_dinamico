@@ -23,6 +23,7 @@ import { CrearCursoComponent } from './componentes/crear-curso/crear-curso.compo
 import { CrearHardskillComponent } from './componentes/crear-hardskill/crear-hardskill.component';
 import { CrearSoftskillComponent } from './componentes/crear-softskill/crear-softskill.component';
 import { CrearProyectoComponent } from './componentes/crear-proyecto/crear-proyecto.component';
+import { ModificarExperienciaComponent } from './componentes/modificar-experiencia/modificar-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CrearProyectoComponent } from './componentes/crear-proyecto/crear-proye
     CrearCursoComponent,
     CrearHardskillComponent,
     CrearSoftskillComponent,
-    CrearProyectoComponent
+    CrearProyectoComponent,
+    ModificarExperienciaComponent
   ],
   imports: [
     BrowserModule,
