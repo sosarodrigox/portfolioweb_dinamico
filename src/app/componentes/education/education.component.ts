@@ -21,15 +21,16 @@ export class EducationComponent implements OnInit {
   crearCarrera(){
     this.router.navigate(['/crear-carrera'])
   }
-  /*
-  educacionList:any;
-  constructor(private datosPortfolio:PortfolioService) { }
+ 
+  modificarCarrera(id:number){
+    this.router.navigate(['/modificar-carrera',id]);
+  }
 
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.educacionList = data.edu_carreras;
+  borrarCarrera(id:number){
+    this.eduCarreraService.borrarCarrera(id).subscribe(dato =>{
+      console.log(dato);
+      this.ngOnInit();
     });
   }
-  */
+
 }

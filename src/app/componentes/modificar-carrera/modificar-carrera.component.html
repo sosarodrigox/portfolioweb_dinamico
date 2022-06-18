@@ -1,1 +1,42 @@
-<p>modificar-carrera works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Modificar carrera</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Universidad: </label>
+            <input type="text" class="form-control" id="universidad" [(ngModel)]="carrera.universidad"
+                name="universidad">
+        </div>
+        <div class="form-group">
+            <label>Carrera: </label>
+            <input type="text" class="form-control" id="carrera" [(ngModel)]="carrera.carrera"
+                name="carrera">
+        </div>
+        <div class="form-group">
+            <label>Link información de carrera: </label>
+            <input type="text" class="form-control" id="link_info" [(ngModel)]="carrera.link_info"
+                name="link_info">
+        </div>
+        <div class="form-group">
+            <label>Fecha de inicio: </label>
+            <input type="text" class="form-control" id="fecha_inicio" [(ngModel)]="carrera.fecha_inicio"
+                name="fecha_inicio">
+        </div>
+        <div class="form-group">
+            <label>Fechas de fin: </label>
+            <input type="text" class="form-control" id="fecha_fin" [(ngModel)]="carrera.fecha_fin"
+                name="fecha_fin">
+        </div>
+        <div class="form-group">
+            <label>Link a imagen logo: </label>
+            <input type="text" class="form-control" id="img_logo" [(ngModel)]="carrera.img_logo" name="img_logo">
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button class="btn btn-success mt-2">Modificar carrera</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-danger mt-2" (click)="volverPortfolio()">Volver</button>
+            </div>
+        </div>
+    </form>
+</div>

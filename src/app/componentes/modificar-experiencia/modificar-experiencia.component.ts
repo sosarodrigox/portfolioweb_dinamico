@@ -30,7 +30,6 @@ export class ModificarExperienciaComponent implements OnInit {
     });
   }
 
-
   volverPortfolio(){
     this.router.navigate(['/portfolio']);
   }

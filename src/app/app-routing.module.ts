@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:'crear-experiencia', component:CrearExperienciaComponent},
   {path:'modificar-experiencia/:id_exp', component:ModificarExperienciaComponent},
   {path:'crear-carrera', component:CrearCarreraComponent},
-  {path:'modificar-carrera',component:ModificarCarreraComponent},
+  {path:'modificar-carrera/:id_carrera',component:ModificarCarreraComponent},
   {path:'crear-curso', component:CrearCursoComponent},
   {path:'modificar-curso',component:ModificarCursoComponent},
   {path:'crear-hardskill', component:CrearHardskillComponent},
