@@ -1,0 +1,112 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Modificar Header/Persona</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input type="text" class="form-control" id="nombre" [(ngModel)]="persona.nombre"
+                name="nombre">
+        </div>
+        <div class="form-group">
+            <label>Apellido: </label>
+            <input type="text" class="form-control" id="apellido" [(ngModel)]="persona.apellido" name="apellido">
+        </div>
+        <div class="form-group">
+            <label>Posición: </label>
+            <input type="text" class="form-control" id="posicion" [(ngModel)]="persona.posicion"
+                name="posicion">
+        </div>
+        <div class="form-group">
+            <label>Ubicación: </label>
+            <input type="text" class="form-control" id="ubicacion" [(ngModel)]="persona.ubicacion"
+                name="ubicacion">
+        </div>
+        <div class="form-group">
+            <label>Nombre de usuario: </label>
+            <input type="text" class="form-control" id="nom_usuario" [(ngModel)]="persona.nom_usuario"
+                name="nom_usuario">
+        </div>
+        <div class="form-group">
+            <label>Link a icono de usuario: </label>
+            <input type="text" class="form-control" id="img_usuario" [(ngModel)]="persona.img_usuario" 
+            name="img_usuario">
+        </div>
+        <div class="form-group">
+            <label>Link a imagen de perfil: </label>
+            <input type="text" class="form-control" id="img_perfil" [(ngModel)]="persona.img_perfil" 
+            name="img_perfil">
+        </div>
+        <div class="form-group">
+            <label>e-mail: </label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="persona.email" 
+            name="email">
+        </div>
+        <div class="form-group">
+            <label>Link a CV: </label>
+            <input type="text" class="form-control" id="link_cv" [(ngModel)]="persona.link_cv" 
+            name="link_cv">
+        </div>
+        <div class="form-group">
+            <label>Link a GitHub: </label>
+            <input type="text" class="form-control" id="link_github" [(ngModel)]="persona.link_github" 
+            name="link_github">
+        </div>
+        <div class="form-group">
+            <label>Link a LinkedIn: </label>
+            <input type="text" class="form-control" id="link_linkedin" [(ngModel)]="persona.link_linkedin" 
+            name="link_linkedin">
+        </div>
+        <div class="form-group">
+            <label>Título del 1er Slide: </label>
+            <input type="text" class="form-control" id="titulo_slide1" [(ngModel)]="persona.titulo_slide1" 
+            name="titulo_slide1">
+        </div>
+        <div class="form-group">
+            <label>Descripción del 1er Slide: </label>
+            <input type="text" class="form-control" id="desc_slide1" [(ngModel)]="persona.desc_slide1" 
+            name="desc_slide1">
+        </div>
+        <div class="form-group">
+            <label>Título del 2do Slide: </label>
+            <input type="text" class="form-control" id="titulo_slide2" [(ngModel)]="persona.titulo_slide2" 
+            name="titulo_slide2">
+        </div>
+        <div class="form-group">
+            <label>Descripción del 2do Slide: </label>
+            <input type="text" class="form-control" id="desc_slide2" [(ngModel)]="persona.desc_slide2" 
+            name="desc_slide2">
+        </div>
+        <div class="form-group">
+            <label>Título del 3er Slide: </label>
+            <input type="text" class="form-control" id="titulo_slide3" [(ngModel)]="persona.titulo_slide3" 
+            name="titulo_slide3">
+        </div>
+        <div class="form-group">
+            <label>Descripción del 3er Slide: </label>
+            <input type="text" class="form-control" id="desc_slide3" [(ngModel)]="persona.desc_slide3" 
+            name="desc_slide3">
+        </div>
+        <div class="form-group">
+            <label>Acerca de mi: </label>
+            <input type="text" class="form-control" id="acerca_de_mi" [(ngModel)]="persona.acerca_de_mi" 
+            name="acerca_de_mi">
+        </div>
+        <div class="form-group">
+            <label>Me interesa: </label>
+            <input type="text" class="form-control" id="me_interesa" [(ngModel)]="persona.me_interesa" 
+            name="me_interesa">
+        </div>
+        <div class="form-group">
+            <label>Mis Hobbies: </label>
+            <input type="text" class="form-control" id="hobbies" [(ngModel)]="persona.hobbies" 
+            name="hobbies">
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button class="btn btn-success mt-2">Modificar persona</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-danger mt-2" (click)="volverPortfolio()">Volver</button>
+            </div>
+        </div>
+    </form>
+</div>

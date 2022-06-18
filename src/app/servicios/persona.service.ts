@@ -16,6 +16,15 @@ export class PersonaService {
   //El observable lo utilizo para las peticiones asíncronas
   //Creo un método público
   public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+'traer/1')
+    return this.http.get<persona>(this.URL+'traer-persona/1')
+  }
+
+  //Este método sirve para obtener o buscar una persona en particular.
+  public traerPersonaPorId(id:number):Observable<persona>{
+    return this.http.get<persona>(`${this.URL+'traer-persona/'}${id}`);
+  }
+
+  public modificarPersona(id:number, persona:persona):Observable<Object>{
+    return this.http.put(this.URL+'modif-persona/'+id,persona);
   }
 }
