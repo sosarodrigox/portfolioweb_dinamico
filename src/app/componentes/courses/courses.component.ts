@@ -21,15 +21,15 @@ export class CoursesComponent implements OnInit {
   crearCurso(){
     this.router.navigate(['/crear-curso'])
   }
-  /*
-  coursesList:any;
-  constructor(private datosPortfolio:PortfolioService) { }
 
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.coursesList = data.edu_cursos;
-    })
+  modificarCurso(id:number){
+    this.router.navigate(['/modificar-curso',id]);
   }
-  */
+
+  borrarCurso(id:number){
+    this.eduCursoService.borrarCurso(id).subscribe(dato =>{
+      console.log(dato);
+      this.ngOnInit();
+    });
+  }
 }

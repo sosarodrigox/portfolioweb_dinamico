@@ -1,1 +1,43 @@
-<p>modificar-curso works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Modificar curso</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Institución: </label>
+            <input type="text" class="form-control" id="institucion" [(ngModel)]="curso.institucion"
+                name="institucion">
+        </div>
+        <div class="form-group">
+            <label>Nombre del curso: </label>
+            <input type="text" class="form-control" id="nom_curso" [(ngModel)]="curso.nom_curso"
+                name="nom_curso">
+        </div>
+        <div class="form-group">
+            <label>Descripción: </label>
+            <input type="text" class="form-control" id="descripcion" [(ngModel)]="curso.descripcion"
+                name="descripcion">
+        </div>
+        <div class="form-group">
+            <label>Duración: </label>
+            <input type="text" class="form-control" id="duracion" [(ngModel)]="curso.duracion"
+                name="duracion">
+        </div>
+        <div class="form-group">
+            <label>Fechas de inicio: </label>
+            <input type="text" class="form-control" id="fecha_inicio" [(ngModel)]="curso.fecha_inicio"
+                name="fecha_inicio">
+        </div>
+        <div class="form-group">
+            <label>Link a imagen logo: </label>
+            <input type="text" class="form-control" id="img_logo" [(ngModel)]="curso.img_logo"
+                name="img_logo">
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button class="btn btn-success mt-2">Modificar curso</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-danger mt-2" (click)="volverPortfolio()">Volver</button>
+            </div>
+        </div>
+    </form>
+</div>
