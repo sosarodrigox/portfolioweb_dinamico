@@ -1,1 +1,28 @@
-<p>modificar-softskill works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Modificar Soft Skill</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Soft Skill: </label>
+            <input type="text" class="form-control" id="skill" [(ngModel)]="skill_soft.skill"
+                name="skill">
+        </div>
+        <div class="form-group">
+            <label>Descripción: </label>
+            <input type="text" class="form-control" id="descripcion" [(ngModel)]="skill_soft.descripcion"
+                name="descripcion">
+        </div>
+        <div class="form-group">
+            <label>Porcentaje: </label>
+            <input type="text" class="form-control" id="porcentaje" [(ngModel)]="skill_soft.porcentaje"
+                name="porcentaje">
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-start">
+                <button class="btn btn-success mt-2">Modificar soft skill</button>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <button class="btn btn-danger mt-2" (click)="volverPortfolio()">Volver</button>
+            </div>
+        </div>
+    </form>
+</div>

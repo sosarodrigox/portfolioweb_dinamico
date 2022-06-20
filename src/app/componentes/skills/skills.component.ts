@@ -22,15 +22,14 @@ export class SkillsComponent implements OnInit {
     this.router.navigate(['/crear-softskill'])
   }
 
-  /*
-  skillList:any;
-  constructor(private datosPortfolio:PortfolioService) { }
-
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.skillList=data.skill_soft;
-    })
+  modificarSoftSkill(id:number){
+    this.router.navigate(['/modificar-softskill',id]);
   }
-  */
+
+  borrarSoftSkill(id:number){
+    this.skillSoftService.borrarSkillSoft(id).subscribe(dato =>{
+      console.log(dato);
+      this.ngOnInit();
+    });
+  }
 }
