@@ -21,15 +21,15 @@ export class ProjectsComponent implements OnInit {
   crearProyecto(){
     this.router.navigate(['/crear-proyecto'])
     }
-
-  /*
-  projectList:any;
-  constructor(private datosPortfolio:PortfolioService) { }
-
-  ngOnInit(): void {this.datosPortfolio.obtenerDatos().subscribe(data =>{
-    console.log(data);
-    this.projectList = data.proyectos;
-  })
-  }
-  */
+  
+  modificarProyecto(id:number){
+      this.router.navigate(['/modificar-proyecto',id]);
+    }
+  
+  borrarProyecto(id:number){
+      this.proyectoService.borrarProyecto(id).subscribe(dato =>{
+        console.log(dato);
+        this.ngOnInit();
+      });
+    }
 }

@@ -28,11 +28,11 @@ const routes: Routes = [
   {path:'crear-curso', component:CrearCursoComponent},
   {path:'modificar-curso/:id_curso',component:ModificarCursoComponent},
   {path:'crear-hardskill', component:CrearHardskillComponent},
-  {path:'modificar-hardskill',component:ModificarHardskillComponent},
+  {path:'modificar-hardskill/:id_hardskill',component:ModificarHardskillComponent},
   {path:'crear-softskill', component:CrearSoftskillComponent},
-  {path:'modificar-softskill',component:ModificarSoftskillComponent},
+  {path:'modificar-softskill/:id_softskill',component:ModificarSoftskillComponent},
   {path:'crear-proyecto', component:CrearProyectoComponent},
-  {path:'modificar-proyecto',component:ModificarProyectoComponent}
+  {path:'modificar-proyecto/:id_proyecto',component:ModificarProyectoComponent}
 ];
 
 @NgModule({

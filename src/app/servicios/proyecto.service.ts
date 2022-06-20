@@ -19,4 +19,17 @@ export class ProyectoService {
   public crearProyecto(proyecto:proyecto):Observable<Object>{
     return this.http.post(this.URL+'nuevo/proyecto',proyecto);
   }
+
+  //Este método sirve para obtener o buscar un Proyecto.
+  public traerProyectoPorId(id:number):Observable<proyecto>{
+    return this.http.get<proyecto>(`${this.URL+'traer-proyecto/'}${id}`);
+  }
+
+  public modificarProyecto(id:number, proyecto:proyecto):Observable<Object>{
+    return this.http.put(this.URL+'modificar-proyecto/'+id,proyecto);
+  }
+
+  public borrarProyecto(id:number):Observable<Object>{
+    return this.http.delete(`${this.URL+'borrar-proyecto/'}${id}`);
+  }
 }
