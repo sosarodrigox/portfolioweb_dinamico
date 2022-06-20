@@ -21,15 +21,15 @@ export class SkillhComponent implements OnInit {
   crearHardSkill(){
     this.router.navigate(['/crear-hardskill'])
   }
-  /*
-  skillList:any;
-  constructor(private datosPortfolio:PortfolioService) { }
-
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.skillList=data.skill_hard;
-    })
+  
+  modificarHardSkill(id:number){
+    this.router.navigate(['/modificar-hardskill',id]);
   }
-  */
+
+  borrarHardSkill(id:number){
+    this.skillHardService.borrarSkillHard(id).subscribe(dato =>{
+      console.log(dato);
+      this.ngOnInit();
+    });
+  }
 }
