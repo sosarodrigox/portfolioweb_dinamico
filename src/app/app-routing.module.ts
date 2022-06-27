@@ -7,7 +7,7 @@ import { CrearHardskillComponent } from './componentes/crear-hardskill/crear-har
 import { CrearProyectoComponent } from './componentes/crear-proyecto/crear-proyecto.component';
 import { CrearSoftskillComponent } from './componentes/crear-softskill/crear-softskill.component';
 import { HomeComponent } from './componentes/home/home.component';
-import { LoginComponent } from './componentes/login/login.component';
+import { LoginComponent } from './auth/login.component';
 import { ModificarHeaderComponent } from './componentes/modificar-header/modificar-header.component';
 import { ModificarExperienciaComponent } from './componentes/modificar-experiencia/modificar-experiencia.component';
 import { ModificarCarreraComponent } from './componentes/modificar-carrera/modificar-carrera.component';
@@ -15,10 +15,14 @@ import { ModificarCursoComponent } from './componentes/modificar-curso/modificar
 import { ModificarHardskillComponent } from './componentes/modificar-hardskill/modificar-hardskill.component';
 import { ModificarSoftskillComponent } from './componentes/modificar-softskill/modificar-softskill.component';
 import { ModificarProyectoComponent } from './componentes/modificar-proyecto/modificar-proyecto.component';
+import { IndexComponent } from './index/index.component';
+import { RegistroComponent } from './auth/registro.component';
 
 const routes: Routes = [
   {path:'portfolio', component:HomeComponent},
-  {path:'', component:HomeComponent},
+  {path:'', component:IndexComponent},
+  {path:'**', redirectTo: '', pathMatch: 'full'},
+  {path:'registro', component:RegistroComponent},
   {path:'login', component:LoginComponent},
   {path:'modificar-header/:id',component:ModificarHeaderComponent},
   {path:'crear-experiencia', component:CrearExperienciaComponent},
