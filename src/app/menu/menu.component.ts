@@ -12,6 +12,7 @@ import { TokenService } from '../servicios/token.service';
 export class MenuComponent implements OnInit {
 
   isLogged = false;
+  nombreUsuario = '';
   persona: persona = new persona("","","","","","","","","","","","","","","","","","","","");
 
   constructor(public persoService: PersonaService, private tokenService: TokenService, private router:Router) { }
@@ -19,8 +20,10 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
     if(this.tokenService.getToken()){
       this.isLogged = true;
+      this.nombreUsuario = this.tokenService.getUserName();
     }else{
       this.isLogged = false;
+      this.nombreUsuario = '';
     }
     this.persoService.getPersona().subscribe(data =>{this.persona = data})
   }
