@@ -21,7 +21,7 @@ import { RegistroComponent } from './auth/registro.component';
 const routes: Routes = [
   {path:'portfolio', component:HomeComponent},
   {path:'', component:IndexComponent},
-  {path:'**', redirectTo: '', pathMatch: 'full'},
+  //{path:'**', redirectTo: '', pathMatch: 'full'},
   {path:'registro', component:RegistroComponent},
   {path:'login', component:LoginComponent},
   {path:'modificar-header/:id',component:ModificarHeaderComponent},

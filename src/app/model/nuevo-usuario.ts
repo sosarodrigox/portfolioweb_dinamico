@@ -1,6 +1,6 @@
 export class NuevoUsuario {
     nombre?: string;
-    nom_usuario?: string;
+    nombreUsuario?: string;
     email?: string;
     password?: string;
     authorities?: string[];

@@ -1,1 +1,20 @@
-<p>menu works!</p>
+<!--Menu superior-->
+<div class="bg-dark p-2">
+    <div id="header" class="row align-items-center pb-2 pt-2 ms-3 me-3">
+        <div class="col-8 texto-user">
+          <img [src]="persona.img_usuario" alt="Logo">{{persona.nom_usuario}}
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+          <a class="navbar-brand " href={{persona.link_github}}>
+            <i class="fa-brands fa-github fa-botonheader" alt="Ir a GitHub"></i></a>
+          <a class="navbar-brand" [href]="persona.link_linkedin">
+            <i class="fa-brands fa-linkedin fa-botonheader" alt="Ir a LinkedIn"></i></a>
+          <a class="navbar-brand" href="/login">
+            <i class="fa-solid fa-right-to-bracket fa-botonheader" alt="Login"></i></a>
+            <a class="navbar-brand" href="/login">
+                <i class="fa-solid fa-person-to-door fa-botonheader" alt="Cerrar Sesión"></i></a>
+        </div>
+      </div>
+</div>
+<!--/Menu superior-->
+  

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { persona } from '../model/persona.model';
+import { PersonaService } from '../servicios/persona.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  persona: persona = new persona("","","","","","","","","","","","","","","","","","","","");
+
+  constructor(public persoService: PersonaService, private router:Router) { }
 
   ngOnInit(): void {
+    this.persoService.getPersona().subscribe(data =>{this.persona = data})
   }
 
 }

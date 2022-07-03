@@ -39,7 +39,7 @@ export class TokenService {
   public getAuthorities(): string[]{
     this.roles = [];
     if(sessionStorage.getItem(AUTHORITIES_KEY)){
-      JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY)!).foreach((authority: { authority: any; }) =>{
+      JSON.parse(sessionStorage.getItem(AUTHORITIES_KEY)!).forEach((authority: { authority: any; }) =>{
         this.roles.push(authority.authority); //VER ACÁ SI DA ERROR 9:30 tipo de authority Cap8
       });
     }
