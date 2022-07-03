@@ -32,6 +32,7 @@ import { ModificarProyectoComponent } from './componentes/modificar-proyecto/mod
 import { RegistroComponent } from './auth/registro.component';
 import { MenuComponent } from './menu/menu.component';
 import { IndexComponent } from './index/index.component';
+import { interceptorProvider } from './interceptors/persona-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,7 @@ import { IndexComponent } from './index/index.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
