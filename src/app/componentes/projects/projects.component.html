@@ -9,7 +9,7 @@
           <small>Proyectos</small>
           <h3>Programación</h3>
         </div>
-        <div class="col-4 d-flex justify-content-end">
+        <div class="col-4 d-flex justify-content-end" *ngIf="isAdmin">
             <button type="button" class="btn btn-outline-light" (click)="crearProyecto()">Agregar Proyecto<i class="fa-solid fa-circle-plus fa-lg ms-2"></i></button>
         </div>
       </div>
@@ -24,7 +24,7 @@
             <a [href]="proyectos.github_link" class="btn btn-primary  mb-2">Ver en
               GitHub</a>
           </div>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isAdmin">
             <button type="button" class="btn btn-outline-dark mb-2" (click)="modificarProyecto(proyectos.id_proyecto)"><i class="fa-solid fa-pen-to-square"></i> </button>
             <button type="button" class="btn btn-outline-dark mb-2" (click)="borrarProyecto(proyectos.id_proyecto)"><i class="fa-solid fa-trash-can"></i> </button>
           </div>

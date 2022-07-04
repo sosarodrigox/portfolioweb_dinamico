@@ -14,7 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { CoursesComponent } from './componentes/courses/courses.component';
 import { SkillhComponent } from './componentes/skillh/skillh.component';
 import { HomeComponent } from './componentes/home/home.component';
-import { LoginComponent } from './componentes/login/login.component';
+import { LoginComponent } from './auth/login.component';
 import { CrearExperienciaComponent } from './componentes/crear-experiencia/crear-experiencia.component';
 import { FormsModule } from '@angular/forms';
 import { CrearCarreraComponent } from './componentes/crear-carrera/crear-carrera.component';
@@ -29,6 +29,10 @@ import { ModificarCursoComponent } from './componentes/modificar-curso/modificar
 import { ModificarHardskillComponent } from './componentes/modificar-hardskill/modificar-hardskill.component';
 import { ModificarSoftskillComponent } from './componentes/modificar-softskill/modificar-softskill.component';
 import { ModificarProyectoComponent } from './componentes/modificar-proyecto/modificar-proyecto.component';
+import { RegistroComponent } from './auth/registro.component';
+import { MenuComponent } from './menu/menu.component';
+import { IndexComponent } from './index/index.component';
+import { interceptorProvider } from './interceptors/persona-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,10 @@ import { ModificarProyectoComponent } from './componentes/modificar-proyecto/mod
     ModificarCursoComponent,
     ModificarHardskillComponent,
     ModificarSoftskillComponent,
-    ModificarProyectoComponent
+    ModificarProyectoComponent,
+    RegistroComponent,
+    MenuComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +71,7 @@ import { ModificarProyectoComponent } from './componentes/modificar-proyecto/mod
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

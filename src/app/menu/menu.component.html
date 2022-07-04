@@ -1,0 +1,24 @@
+<!--Menu superior-->
+<div class="bg-dark p-2">
+    <div id="header" class="row align-items-center pb-2 pt-2 ms-3 me-3">
+        <div class="col-8 texto-user">
+            <div class="nav-item" *ngIf="isLogged">
+                <a class="nav-link" routerLink="/">
+                    <img [src]="persona.img_usuario" alt="Logo">
+                    {{nombreUsuario}}
+                </a>
+            </div>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <a class="navbar-brand " *ngIf="isLogged" href={{persona.link_github}}>
+                <i class="fa-brands fa-github fa-botonheader" alt="Ir a GitHub"></i></a>
+            <a class="navbar-brand" *ngIf="isLogged" [href]="persona.link_linkedin">
+                <i class="fa-brands fa-linkedin fa-botonheader" alt="Ir a LinkedIn"></i></a>
+            <a class="navbar-brand" *ngIf="!isLogged" href="/login">
+                <i class="fa-solid fa-right-to-bracket fa-botonheader" alt="Iniciar sesión"></i></a>
+            <a class="navbar-brand" *ngIf="isLogged" href="/">
+                <i class="fa-solid fa-person-through-window fa-botonheader" (click)="onLogOut()" alt="Cerrar sesión"></i></a>
+        </div>
+    </div>
+</div>
+<!--/Menu superior-->
