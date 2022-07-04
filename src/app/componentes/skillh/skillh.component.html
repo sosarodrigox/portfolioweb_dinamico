@@ -9,7 +9,7 @@
           <small>Skills</small>
           <h3>Hard Skills</h3>
         </div>
-        <div class="col-4 d-flex justify-content-end">
+        <div class="col-4 d-flex justify-content-end" *ngIf="isAdmin">
             <button type="button" class="btn btn-outline-light" (click)="crearHardSkill()">Agregar Skill<i class="fa-solid fa-circle-plus fa-lg ms-2"></i></button>
         </div>
       </div>
@@ -23,7 +23,7 @@
               {{skill_hard.porcentaje}}%</div>
           </div>
         </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isAdmin">
           <button type="button" class="btn btn-outline-dark mb-2" (click)="modificarHardSkill(skill_hard.id_hardskill)"><i class="fa-solid fa-pen-to-square"></i> </button>
           <button type="button" class="btn btn-outline-dark mb-2" (click)="borrarHardSkill(skill_hard.id_hardskill)"><i class="fa-solid fa-trash-can"></i> </button>
         </div>

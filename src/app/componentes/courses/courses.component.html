@@ -9,7 +9,7 @@
                   <small>Educación</small>
                   <h3>Cursos:</h3>
                 </div>
-                <div class="col-4 d-flex justify-content-end">
+                <div class="col-4 d-flex justify-content-end" *ngIf="isAdmin">
                     <button type="button" class="btn btn-outline-light" (click)="crearCurso()">Agregar Curso<i class="fa-solid fa-circle-plus fa-lg ms-2"></i></button>
                 </div>
               </div>
@@ -26,7 +26,7 @@
                             <small class="text-muted">({{edu_cursos.fecha_inicio}})</small>
                         </p>
                     </div>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center" *ngIf="isAdmin">
                         <button type="button" class="btn btn-outline-dark mb-2" (click)="modificarCurso(edu_cursos.id_curso)"><i class="fa-solid fa-pen-to-square"></i> </button>
                         <button type="button" class="btn btn-outline-dark mb-2" (click)="borrarCurso(edu_cursos.id_curso)"><i class="fa-solid fa-trash-can"></i> </button>
                       </div>

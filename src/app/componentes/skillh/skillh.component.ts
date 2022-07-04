@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HardskillService } from 'src/app/servicios/hardskill.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-skillh',
@@ -11,11 +12,23 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class SkillhComponent implements OnInit {
 
   skillHard: any;
+  roles: string[] = [];
+  isAdmin = false;
 
-  constructor(private skillHardService:HardskillService, private router:Router){}
+  constructor(
+    private skillHardService:HardskillService,
+     private router:Router,
+     private tokenService: TokenService
+     ){}
 
   ngOnInit(): void {
-    this.skillHardService.getListaHardSkills().subscribe(data=>{this.skillHard=data})
+    this.skillHardService.getListaHardSkills().subscribe(data=>{this.skillHard=data});
+    this.roles = this.tokenService.getAuthorities();
+    this.roles.forEach(rol => {
+      if(rol === 'ROLE_ADMIN'){
+        this.isAdmin=true;
+      }
+    });
   }
 
   crearHardSkill(){
