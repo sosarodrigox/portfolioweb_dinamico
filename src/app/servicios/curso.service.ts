@@ -8,7 +8,7 @@ import { edu_curso } from '../model/edu_curso.model';
 })
 export class CursoService {
 
-  URL = 'http://localhost:8080/'
+  URL = 'https://fast-ocean-60172.herokuapp.com/'
 
   constructor(private http: HttpClient) { }
 

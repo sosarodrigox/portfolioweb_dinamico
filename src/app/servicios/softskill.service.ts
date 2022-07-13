@@ -8,7 +8,7 @@ import { skill_soft } from '../model/skill_soft.model';
 })
 export class SoftskillService {
 
-  URL = 'http://localhost:8080/'
+  URL = 'https://fast-ocean-60172.herokuapp.com/'
 
   constructor(private http: HttpClient) { }
 
