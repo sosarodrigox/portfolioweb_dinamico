@@ -8,7 +8,7 @@ import { edu_carrera } from '../model/edu_carrera.model';
 })
 export class CarreraService {
 
-  URL = 'http://localhost:8080/'
+  URL = 'https://fast-ocean-60172.herokuapp.com/'
 
   constructor(private http: HttpClient) { }
 

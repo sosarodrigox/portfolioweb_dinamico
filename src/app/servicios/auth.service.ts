@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'http://localhost:8080/auth/'
+  authURL = 'https://fast-ocean-60172.herokuapp.com/auth/'
 
   constructor(private httpClient: HttpClient) { }
 

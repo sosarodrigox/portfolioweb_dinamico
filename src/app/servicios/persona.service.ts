@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
 export class PersonaService {
 
   //Primero ponemos desde donde quiero que llame al backend
-  URL = 'http://localhost:8080/'; //Este es el genérico, luego se concatenan los metodos html
+  URL = 'https://fast-ocean-60172.herokuapp.com/'; //Este es el genérico, luego se concatenan los metodos html
 
   constructor(private http:HttpClient) { } //Agrego la variable http en el constructor
 
