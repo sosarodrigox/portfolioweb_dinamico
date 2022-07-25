@@ -26,7 +26,7 @@ export class CrearExperienciaComponent implements OnInit {
 
 
   volverPortfolio(){
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/home']);
   }
 
   onSubmit(){

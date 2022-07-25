@@ -11,6 +11,7 @@ import { TokenService } from '../servicios/token.service';
 })
 export class MenuComponent implements OnInit {
 
+  imgUnregistered = 'https://i.ibb.co/588cz84/alien.png';
   isLogged = false;
   nombreUsuario = '';
   persona: persona = new persona("","","","","","","","","","","","","","","","","","","","");

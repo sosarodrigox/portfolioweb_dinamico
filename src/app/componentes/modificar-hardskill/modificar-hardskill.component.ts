@@ -31,7 +31,7 @@ export class ModificarHardskillComponent implements OnInit {
   }
 
   volverPortfolio(){
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/home']);
   }
 
   onSubmit(){

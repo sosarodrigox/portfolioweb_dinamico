@@ -31,7 +31,7 @@ export class ModificarHeaderComponent implements OnInit {
   }
 
   volverPortfolio(){
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/home']);
   }
 
   onSubmit(){

@@ -12,10 +12,6 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>Hola! Bienvenido a mi Portfolio. Soy {{persona.nombre}} de {{persona.ubicacion}} y esto es algo acerca de mi:</strong> {{persona.acerca_de_mi}}
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isAdmin">
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pen-to-square"></i> </button>
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i> </button>
-                </div>
               </div>
             </div>
           </div>
@@ -28,10 +24,6 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>Acá van algunas cosas que ocupan mi cabeza: </strong> {{persona.me_interesa}}
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isAdmin">
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pen-to-square"></i> </button>
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i> </button>
-                </div>
               </div>
             </div>
           </div>
@@ -44,10 +36,6 @@
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <strong>Cuando tengo tiempo libre me gusta invertirlo en: </strong> {{persona.hobbies}}
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end" *ngIf="isAdmin">
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-pen-to-square"></i> </button>
-                  <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-trash-can"></i> </button>
-                </div>
               </div>
             </div>
           </div>

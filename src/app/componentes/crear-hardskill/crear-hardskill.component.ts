@@ -25,7 +25,7 @@ export class CrearHardskillComponent implements OnInit {
   }
 
   volverPortfolio(){
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/home']);
   }
 
   onSubmit(){
